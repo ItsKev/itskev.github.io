@@ -2,6 +2,14 @@
 layout: default
 ---
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+  <script src="visualizer.js"></script>
+
+  <label for="save.dat">save.dat</label><br/>
+  <input type="text" id="save.dat" size="75%">
+  <button type="button" onclick="onSubmit()">Submit</button><br/><br/>
+
+  <button type="button" id="compact_mode" onclick="toggleCompactMode()">Compact Mode</button>
+
+  <h1 id="parsed_values"></h1>
+  <div id="values" style="width: 100%"></div>
 </body>
