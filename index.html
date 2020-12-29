@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<body>
+<body onload="drawTables()">
+  <script src="entry.js"></script>
   <script src="visualizer.js"></script>
+  <script src="parse_save_game.js"></script>
 
   <label for="save.dat">save.dat</label><br/>
   <input type="text" id="save.dat" size="75%">
